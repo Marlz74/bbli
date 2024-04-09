@@ -242,6 +242,10 @@ nav .globe{
     width: max-content;
     padding: .5rem 2.5rem;
 }
+.primary{
+    width: max-content;
+    padding: 1rem 2.5rem;
+}
 
 footer{
     background-color: var(--navy-blue);
@@ -254,6 +258,46 @@ footer .s1 a{
 }
 
 .mobile{
+    display: none;
+}
+
+video{
+    width:50%;
+    margin: 0 auto;
+}
+.video{
+    margin-top: 5rem;
+}
+.video h2{
+    font-size: 3rem;
+}
+.instructors .card{
+    width: 15rem;
+}
+
+
+.instructors img{
+    width: 100%;
+    min-height: 7.6rem;
+    max-height: 7.6rem;    
+}
+
+.benefits .card{
+    border: 2px solid var(--text);
+}
+
+#enroll{
+    background-color: var(--light-gray);
+}
+
+.enrollnow{
+    position: fixed;
+    bottom: 9px;
+    right: 0;
+    z-index: 999 !important;
+
+}
+.lg-none{
     display: none;
 }
 @media only screen and (max-width:1530px) {
@@ -281,8 +325,57 @@ footer .s1 a{
     .mobile{
         display: block;
     }
+    .lg-none{
+        display: block;
+    }
     .links{
+        position: absolute;
+        background-color: var(--white);
+        color: var(--black);
+        z-index: 999 !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links .hr{
+        height: 1px;
+        width: 100%;
+        border-bottom: .7px solid var(--text);   
+    }
+
+    .md-mt-1{
+        margin-top: 1rem !important;
+    }
+    .md-mb-1{
+        margin-bottom: 1rem !important;
+    }
+    .md-margin{
+        margin:0 1rem ;
+    }
+    .md-none{
         display: none;
+    }
+    .close{
+        position: absolute;
+        z-index: 9999 !important;
+        right: 1rem;
+        font-size: 2rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: var(--light-gray);
+        color: var(--text);
+        font-weight: 100;
+        top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+    }
+    .md-hide{
+        display: none !important;
     }
     .mobile-icon{
         font-size: 2rem;
@@ -298,6 +391,12 @@ footer .s1 a{
         max-width: 100%;
         line-height: 1.5rem;
     }
+
+    video{
+        width:80%;
+    }
+
+
 }
 
 
@@ -330,6 +429,16 @@ footer .s1 a{
         font-size: 1.5rem;
         
     }
+
+    .video h2 {
+        font-size: 2rem;
+    }
+
+    video{
+        width:100%;
+    }
+
+
 }
 
 @media only screen and (max-width:385px){

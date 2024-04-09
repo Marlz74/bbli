@@ -11,20 +11,23 @@
 </head>
 
 <body>
+
+    <a href="" class="enrollnow primary black-bg" >Enroll Now</a>
+
     <section id="nav">
         <nav>
             <div class="wrapper flex items-center justify-between ">
-                <i class="fa fa-bars mobile mobile-icon pointer" ></i>
+                <span class="mobile mobile-icon pointer" id="menu"  ><i class="fa fa-bars "  ></i></span>
                 <img src="./images/logo.png" alt="" class="logo" width="100">
 
-                <div class="links flex items-center gap-1">
+                <div class="links flex items-center gap-1 md-hide">
 
-                    <p>Categories</p>
-                    <div class="input-group flex items-center ">
+                    <p class="md-none" >Categories</p>
+                    <div class="input-group flex items-center md-none">
                         <button><i class="fa fa-search"></i></button>
                         <input type="text" placeholder="Search for anything">
                     </div>
-                    <div class="dropdown-c c relative">
+                    <div class="dropdown-c c relative md-none">
                         <p class="pointer c">BBLI Business</p>
 
 
@@ -35,7 +38,7 @@
 
                     </div>
 
-                    <div class="dropdown-c relative">
+                    <div class="dropdown-c relative md-none">
                         <p class="pointer">Teach on BBLI</p>
                         <div class="drop-down hide">
                             <p>Get your team access to over 25,000 top udemy courses anytime, anywhere.</p>
@@ -43,11 +46,22 @@
                         </div>
                     </div>
 
-                    <a href="" class="btn">Log In</a>
-                    <a href="" class="btn">Sign Up</a>
-                    <div class="globe">
+                    <a href="" class="btn md-margin md-mt-1 ">Log In</a>
+                    <a href="" class="btn md-margin ">Sign Up</a>
+                    <p class="hr lg-none" ></p>
+                    <div class="globe md-none">
                         <i class="fa fa-globe"></i>
                     </div>
+
+                    <a href="" class="lg-none md-margin" >About Us</a>
+                    <a href="" class="lg-none md-margin" >Exclusive Student Benefits</a>
+                    <a href="" class="lg-none md-margin" >School Time Table</a>
+                    <a href="" class="lg-none md-margin" >Course Outlines</a>
+                    <a href="" class="lg-none md-margin" >Instructors</a>
+                    <a href="" class="lg-none md-margin" >Team</a>
+                    <a href="" class="lg-none md-margin md-mb-1" >Contact Us</a>
+                    <span class="close lg-none pointer" id="close" ><i class="fa fa-times" ></i></span>
+
 
 
                 </div>
@@ -62,7 +76,7 @@
         <div class="wrapper relative banner">
             <img src="./images/journey.png" alt="" class="banner_img">
             <div class="card">
-                <h3 class="banner_ph" >Dollar Skills Mastery Program</h3>
+                <h3 class="banner_ph">Dollar Skills Mastery Program</h3>
                 <p class="mt-1 banner_ph">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, minima! Quibusdam ex at natus!
                     Molestias, possimus tempore! Nemo cum quasi facilis, esse quaerat ut, provident fugiat, unde amet
@@ -79,13 +93,44 @@
 
     <section id="trust" class="mt-3">
         <div class="wrapper">
-            <p class="text-center header">Trusted by over 15,000 companies and millions of learners around the world.
+            <p class="text-center header">Gain knowledge from certified professionals with years of experience.
             </p>
-            <div class="flex-center gap-2 flex-wrap mt-2 ">
-                <img src="./images/logo.png" alt="" width="100">
-                <img src="./images/logo.png" alt="" width="100">
-                <img src="./images/logo.png" alt="" width="100">
-                <img src="./images/logo.png" alt="" width="100">
+            <div class="flex-center gap-2 flex-wrap mt-2 instructors">
+                <div class="card">
+
+
+                    <img src="./images/dollars.png" alt="">
+
+                    <h4 class="mt-1">SD Marlz</h4>
+                    <p class="mt-1">Nwaniba road, Uyo</p>
+
+                </div>
+                <div class="card">
+
+
+                    <img src="./images/journey.png" alt="">
+
+                    <h4 class="mt-1">SD Marlz</h4>
+                    <p class="mt-1">Nwaniba road, Uyo</p>
+
+                </div>
+                <div class="card">
+
+
+                    <img src="./images/mastery.png" alt="">
+
+                    <h4 class="mt-1">SD Marlz</h4>
+                    <p class="mt-1">Nwaniba road, Uyo</p>
+
+                </div>
+
+            </div>
+            <div class="flex-center mt-3">
+                <a href="" class="block black-bg primary">Available Programs</a>
+            </div>
+            <div class="flex-center flex-colum video gap-2 flex-wrap">
+                <h2 class="mb-2">All you need to know</h2>
+                <video src="./video/js.mp4" controls autopla class="block"></video>
             </div>
         </div>
     </section>
@@ -307,9 +352,44 @@
 
                 </div>
             </div>
+
+            <h2 class="mt-3" >Exclusive Student Benefits</h2>
+            <p class="mt-1" >Stand out as a student of Beyond Borders Institute and get to unlock these extra benefits. </p>
+
+            <div class="benefits testimonail flex items-center gap-2 mt-3 flex-wrap justify-around ">
+                <div class="card  flex items-center justify-between gap-1 ">
+                    <img src="./images/logo.png" alt="" width="100" >
+
+                    <div class="">
+                        <h4>Data Science</h4>
+                        <p style="margin-top: 8px;" >Data is everything</p>
+                    </div>
+                </div>
+                <div class="card flex items-center justify-between gap-1 ">
+                    <img src="./images/logo.png" alt="" width="100" >
+
+                    <div class="">
+                        <h4>Data Science</h4>
+                        <p style="margin-top: 8px;"  >Data is everything</p>
+                    </div>
+                </div>
+                <div class="card flex items-center justify-between gap-1 ">
+                    <img src="./images/logo.png" alt="" width="100" >
+
+                    <div class="">
+                        <h4>Data Science</h4>
+                        <p style="margin-top: 8px;" >Data is everything</p>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
 
     </section>
+
+    
 
     <section id="testimonail">
         <div class="wrapper flex items-center justify-around testimonail gap-2">
@@ -369,10 +449,9 @@
 
     <section id="enroll">
         <div class="wrapper flex-center ceo">
-            <img src="./images/ceo.png" alt="">
+            <img src="./images/logo.png" alt="">
             <div class="text-container">
-                <p>Unlimited access to 25,000+ top BBLI courses, anytime, anywhere with International course collection
-                    in 14 languages</p>
+                <p>Empowering you for global excellence</p>
                 <a href="" class="black-bg block mt-1">Enroll Now</a>
             </div>
         </div>
@@ -404,7 +483,7 @@
         </div>
     </footer>
 
-<script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

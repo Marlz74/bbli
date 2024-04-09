@@ -1,6 +1,8 @@
 const [leftslide, rightslide] = document.querySelectorAll('.slide'),
 [bannerTitle, bannerDes] = document.querySelectorAll('.banner_ph'),
-    //banners = ['journey.png', 'dollars.png', 'mastery.png', 'dollars.png'],
+    links=document.querySelector('.links'),
+    menu_=document.querySelector('#menu'),
+    close_=document.querySelector('#close'),
     banners = [{
         img:'journey.png',
         title: 'Dollars Skills Mastery Program',
@@ -35,4 +37,11 @@ leftslide.onclick = () => {
     banner_img.attributes.src.value = './images/' + banners[bi].img;
     bannerTitle.innerHTML=banners[bi].title;
     bannerDes.innerHTML=banners[bi].description;
+}
+
+menu_.onclick=()=>{
+    links.classList.remove('md-hide');
+}
+close_.onclick=()=>{
+    links.classList.add('md-hide');
 }
