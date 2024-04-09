@@ -1,0 +1,345 @@
+@import url(./module.css);
+@import url(./color.css);
+@import url(./font.css);
+
+body{
+    font-family: sans-serif;
+    color: var(--text);
+}
+
+.links{
+    width: 90%;
+    justify-content: right;
+}
+
+.links .input-group{
+    width: 55%;
+    border: 2px solid var(--black);
+    border-radius: 2rem;
+    padding: 0 1rem;
+    font-weight: 300;
+}
+.links .input-group button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: var(--gray);
+}
+.links .input-group input{
+    width: 90%;
+    padding: 1rem .5rem;
+    outline: none;
+    border: none;
+}
+nav a.btn{
+    border: 2px solid var(--black);
+    padding: .5rem .9rem;
+    font-weight: 700;
+    z-index: 1;
+}
+.links a.btn:nth-child(odd){
+    color: var(--black);
+}
+.links a.btn:nth-child(even){
+    color: var(--white);
+    background-color: var(--black);
+}
+
+nav .globe{
+    border: 2px solid var(--black);
+    font-size: 1.56rem;
+    padding: 2px ;
+    color: var(--black);
+    
+}
+
+
+.drop-down{
+    position: absolute;
+    width: 15rem;
+    text-align: center;
+    padding: .7rem .5rem;
+    box-shadow: 0px 0px 7px #0000002d ;
+    border-radius: .5rem;
+    top: 130%;
+    z-index: 2 !important;
+}
+
+
+.drop-down a{
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    width: max-content;
+    padding: .5rem .8rem;
+    margin: .7rem auto 0 ;
+}
+
+.dropdown-c{
+    z-index: 99 !important;
+}
+.dropdown-c:hover .drop-down{
+    display: block;    
+}
+
+.banner{
+    height: 32rem;
+}
+
+.banner_img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.card{
+    background-color: var(--white);
+    padding: 1rem ;
+
+    
+}
+.banner .card{
+    position: absolute;
+    left: 4rem;
+    max-height: 15rem;
+    top: 9rem;
+    width: 30rem;
+    box-shadow: 0 0 2px var(--white);
+    line-height: 1.6rem;
+
+
+}
+.banner .card a{
+    color: var(--white);
+    background-color: var(--black);
+    font-family: 700;
+    display: block;
+    width: max-content;
+    padding: .5rem .8rem;
+    box-shadow: 0 0 2px black;
+}
+.slide{
+    position: absolute;
+    bottom: 0;
+    color: var(--gray);
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: 100;
+    right: 5px;
+    user-select: none !important;
+}
+.slide.left{
+    left: 5px;
+}
+
+#trust{
+    background-color: var(--light-gray);
+    padding: 5rem 0;
+}
+
+#trust .header{
+    color: var(--color-gray);
+    font-size: 1.5rem;
+}
+
+.courses span{
+    color: var(--color-gray1);
+    font-weight: 700;
+}
+.courses span:nth-child(4){
+    color: var(--black);
+}
+
+#outlines,#testimonail,#enroll,footer{
+    padding: 5rem 0;
+}
+#outlines h2{
+    font-size: 2.3rem;
+    color: var(--black);
+}
+.courses.overflow{
+    border: solid 2px var(--text);
+    padding: 2rem ;
+}
+.courses.overflow .card{
+    border-radius: .8rem;
+    box-shadow: 0 0 5px #00000034;
+    min-width: 16rem;
+    max-width: 16rem;
+}
+.courses.overflow .card .inner img{
+    object-fit: cover;
+    width:100% ;
+    
+}
+.courses.overflow .card .inner .rating{
+    margin: .7rem 0;
+}
+.courses.overflow .card .inner h4{
+    margin-top: .7rem;
+    font-size: 1.1rem;
+}
+.stars svg.active{
+    color: var(--red);
+}
+.courses.overflow .card .inner .price{
+    margin-top: 1rem;
+}
+.courses.overflow .card .inner .price p:first-child{
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+.courses.overflow .card .inner .price p:last-child{
+    text-decoration: line-through;
+}
+.testimonail .card{
+    width: 22rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+    padding: 1rem 2rem  1.5rem;
+}
+.testimonail .card svg{
+    width: 3rem !important;
+    object-fit: contain;
+}
+.testimonail .card .p{
+    line-height: 1.5rem;
+    text-align: left;
+}
+.circle{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.black-bg{
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 700;
+}
+.ceo{
+    gap: 6rem;
+}
+
+.ceo img{
+    width: 25rem;
+    
+    object-fit: contain;
+}
+.ceo .text-container{
+    max-width: 45%;
+    line-height: 1.5rem;
+}
+
+.ceo .text-container p{
+    font-size: 1.2rem;
+}
+.ceo .text-container a{
+    width: max-content;
+    padding: .5rem 2.5rem;
+}
+
+footer{
+    background-color: var(--navy-blue);
+    color: var(--white);
+}
+
+footer .s1 a{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.mobile{
+    display: none;
+}
+@media only screen and (max-width:1530px) {
+    .wrapper{
+        width: 95%;
+    }
+
+    .links .input-group {
+        width: 40%;
+    }
+}
+@media only screen and (max-width:1140px) {
+
+    .links .input-group {
+        width: 30%;
+    }
+}
+@media only screen and (max-width:970px) {
+
+    .links .input-group {
+        width: 20%;
+    }
+}
+@media only screen and (max-width:894px) {
+    .mobile{
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+    .mobile-icon{
+        font-size: 2rem;
+        user-select: none !important;
+    }
+    .testimonail{
+        flex-wrap: wrap;
+    }
+    .ceo{
+        flex-direction: column;
+    }
+    .ceo .text-container {
+        max-width: 100%;
+        line-height: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width:620px){
+    .banner {
+        height: 10rem;
+    }
+    .banner .card {
+       display: none;
+    }
+
+    .banner_img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        object-fit: cover;
+        
+    }
+}
+
+@media only screen and (max-width:413px){
+    .ceo img {
+        width: 100%;
+        object-fit: contain;
+    }
+    .slide {
+        font-size: 1.5rem;
+        
+    }
+}
+
+@media only screen and (max-width:385px){
+    .testimonail .card {
+        width: 100%;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+        padding: 1rem 2rem  1.5rem;
+    }
+    .slide {
+        font-size: 1.5rem;
+        
+    }
+}
